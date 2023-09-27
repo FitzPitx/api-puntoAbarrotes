@@ -5,10 +5,5 @@
     $database = 'abarrotes_47';
 
     $con = mysqli_connect($hostname, $username, $password, $database);
-    if(!$con){
-        echo "Error en la conexión con el servidor";
-    } else {
-        echo "Conexión exitosa";
-    }
 
 ?>
