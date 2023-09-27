@@ -12,7 +12,7 @@
 
     if ($result > 0) {
 
-        $fetchUser = mysqli_query($con, "SELECT user_id, user_nombre, user_apellido user_usuario, user_mail FROM userapi WHERE user_mail = '$user_mail'");
+        $fetchUser = mysqli_query($con, "SELECT user_id, user_nombre, user_apellido, user_usuario, user_mail FROM userapi WHERE user_mail = '$user_mail'");
 
         if (mysqli_num_rows($fetchUser) > 0) {
             while ($row = $fetchUser->fetch_assoc()){
